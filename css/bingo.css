@@ -1,0 +1,104 @@
+body {
+    background-image: url(../img/tt.jpg);
+    /* background-repeat:round; */
+    font-weight: bold
+}
+
+.title {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+div {
+    text-align: center;
+}
+
+table {
+    display: inline-block;
+    margin-right: auto;
+    margin: 0 auto;
+    border-collapse: separate;
+    font-size: 22px;
+}
+
+.compNum,
+.PlayerNum {
+    background-color: #00000069;
+}
+
+td {
+    border: solid 0.1px rgb(255, 255, 255);
+    width: 6rem;
+    height: 6rem;
+    background-size: 6rem 6rem;
+    text-align: center;
+}
+
+#computer {
+    margin-right: 40px;
+}
+
+#player {
+    margin-left: 40px;
+}
+
+.compNum,
+.PlayerNum {
+    color: rgb(0, 0, 0);
+}
+
+
+#compChoice,
+#compChoiceVal,
+#playerChoice {
+    font-size: 30px;
+    background-color: #c7d6d569;
+    color: black;
+}
+
+#restart {
+    display: block;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#playerChoiceNum {
+    border: 3px green dotted;
+    width: 50px;
+    padding: 7px 0px;
+
+}
+
+#noOpenNum {
+    font-size: 32px;
+    /* color: rgb(255, 255, 255); */
+    background-color: chocolate;
+}
+
+.myinput,
+#confirm {
+    color: #0099CC;
+    background: transparent;
+    border-radius: 6px;
+    border: 2px solid #008CBA;
+    color: black;
+    padding: 10px 26px;
+    text-align: center;
+    display: inline-block;
+    font-size: 22px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#confirm:hover,
+.myinput:hover {
+    color: white;
+    background-color: #008CBA;
+}

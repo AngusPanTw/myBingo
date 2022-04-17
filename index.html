@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./javascript/bingo.js"></script>
+    <link rel="stylesheet" href="./css/bingo.css">
+    <title>賓果小遊戲</title>
+</head>
+
+<body>
+    <div>
+        <table id="computer">
+            <tr>
+                <th colspan="5"><span class="title">電腦的賓果</span></th>
+            </tr>
+            <tr>
+                <td id="comp1" class="compNum">1</td>
+                <td id="comp2" class="compNum">2</td>
+                <td id="comp3" class="compNum">3</td>
+                <td id="comp4" class="compNum">4</td>
+                <td id="comp5" class="compNum">5</td>
+            </tr>
+            <tr>
+                <td id="comp6" class="compNum">6</td>
+                <td id="comp7" class="compNum">7</td>
+                <td id="comp8" class="compNum">8</td>
+                <td id="comp9" class="compNum">9</td>
+                <td id="comp10" class="compNum">10</td>
+            </tr>
+            <tr>
+                <td id="comp11" class="compNum">11</td>
+                <td id="comp12" class="compNum">12</td>
+                <td id="comp13" class="compNum">13</td>
+                <td id="comp14" class="compNum">14</td>
+                <td id="comp15" class="compNum">15</td>
+            </tr>
+            <tr>
+                <td id="comp16" class="compNum">16</td>
+                <td id="comp17" class="compNum">17</td>
+                <td id="comp18" class="compNum">18</td>
+                <td id="comp19" class="compNum">19</td>
+                <td id="comp20" class="compNum">20</td>
+            </tr>
+            <tr>
+                <td id="comp21" class="compNum">21</td>
+                <td id="comp22" class="compNum">22</td>
+                <td id="comp23" class="compNum">23</td>
+                <td id="comp24" class="compNum">24</td>
+                <td id="comp25" class="compNum"><span id="sp">25</span></td><br>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="4" id="compChoice">
+                        電腦選擇的數字是<br>
+                    </td>
+                    <td id="compChoiceVal"></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <table id="player">
+            <thead>
+                <th colspan="5"><span class="title">您的賓果</span></th>
+            </thead>
+            <tr>
+                <td id="play1" class="PlayerNum">1</td>
+                <td id="play2" class="PlayerNum">2</td>
+                <td id="play3" class="PlayerNum">3</td>
+                <td id="play4" class="PlayerNum">4</td>
+                <td id="play5" class="PlayerNum">5</td>
+            </tr>
+            <tr>
+                <td id="play6" class="PlayerNum">6</td>
+                <td id="play7" class="PlayerNum">7</td>
+                <td id="play8" class="PlayerNum">8</td>
+                <td id="play9" class="PlayerNum">9</td>
+                <td id="play10" class="PlayerNum">10</td>
+            </tr>
+            <tr>
+                <td id="play11" class="PlayerNum">11</td>
+                <td id="play12" class="PlayerNum">12</td>
+                <td id="play13" class="PlayerNum">13</td>
+                <td id="play14" class="PlayerNum">14</td>
+                <td id="play15" class="PlayerNum">15</td>
+            </tr>
+            <tr>
+                <td id="play16" class="PlayerNum">16</td>
+                <td id="play17" class="PlayerNum">17</td>
+                <td id="play18" class="PlayerNum">18</td>
+                <td id="play19" class="PlayerNum">19</td>
+                <td id="play20" class="PlayerNum">20</td>
+            </tr>
+            <tr>
+                <td id="play21" class="PlayerNum">21</td>
+                <td id="play22" class="PlayerNum">22</td>
+                <td id="play23" class="PlayerNum">23</td>
+                <td id="play24" class="PlayerNum">24</td>
+                <td id="play25" class="PlayerNum">25</td>
+            </tr>
+            <tfoot>
+                <tr id="playerChoice">
+                    <td colspan="4">
+                        <label>您選擇的數字是 <input id="playerChoiceNum" type="text"></label>
+                        <button id="confirm">確認</button>
+                    </td>
+                    <td id="playerChoiceNumVal"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div><br>
+    
+    <div id="staratBtn">
+        <input type="button" id="genTable" class="myinput" value="點我產生賓果表"><br>
+        <span id="noOpenNum"></span>
+    </div>
+</body>
+
+</html>
